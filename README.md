@@ -5,102 +5,56 @@ THIS ASSIGNMENT IS FOR THE SUBMITION FOR THE INTERVIEW ROUND OF ARYA.ASSIGNMENT
 THE PROBLEM STATEMENT WAS OF UNSUPERVISED DATA AND HAVE TO CLASSIFY THE TEST DATA
 
 SO FIRST I EDA THE DATASET WITH HAVING NO CONCRETE FEATURES  I PERFORMED NORMAL BAR GRAPH
-PLOTTING AND LABEL CATEGORIES
+PLOTTING AND LABEL CATEGORIES.
 
-NOW THE FIRST TASK IS TO DIVIDE THE DATATSET INTO THE 4:1 WHICH MEANS 80% TRAIN 20% TEST
+NOW THE FIRST TASK IS TO DIVIDE THE DATATSET INTO THE 4:1 WHICH MEANS 80% TRAIN 20% TEST.
 
-AFTER TRAIN TEST SPLIT FIRST STEP WAS TO FIND THE HIGH CORRELATING FEATURES AND REMOVE THAT
+AFTER TRAIN TEST SPLIT FIRST STEP WAS TO FIND THE HIGH CORRELATING FEATURES AND REMOVE THOSE 
+FEATURE WHICH HAVE MORE THAN 0.5 VALUE IN POSTIVE AND NEGATIVE ALSO.
 
 AFTER REMOVING THOSE FEATURES NEXT STEP IS TO APPLY PREPROCESSING LIKE STANDARDIZATION 
-FOR THAT WE USED STANDARD SCALER
+FOR THAT WE USED STANDARD SCALER.
 
 THEN WE USED RANDOMFORREST CLASSIFIER
 
 AFTER THAT TRAINING IT WITH TRAIN DATA WE PREDICT IT WITH THE TEST DATA AND COME UP WITH
+THE FOLLOWING REPORT
+![image](https://user-images.githubusercontent.com/55955461/135623365-735a3696-46bb-4c5c-862c-b6d1f6cc0774.png)
+
+AND WITH THE CONFUSION MATRIX OF
+![image](https://user-images.githubusercontent.com/55955461/135623480-21e90409-e973-4c36-a1be-3745fd52387d.png)
+
+ROC CURVE PLOT
+![image](https://user-images.githubusercontent.com/55955461/135623894-d28251fc-a4e3-4717-b0ad-a97e60ff4940.png)
+
+
+
+AT LAST THE MODEL STANDS AT
+PRECISION 96
+RECALL 89
+F1 93
+
+
+AND AT THE END WE ADDED NEW LABEL IN TEST CSV AND ADDED THE OUTPUT PREDICTION IN IT
+
+
+THE PRECISION RECALL CURVE
+![image](https://user-images.githubusercontent.com/55955461/135623838-7816f207-7944-4156-9af7-2b1f1ba0e0a6.png)
+
+
 
 
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
-
-`ANOTHER_API_KEY`
+python 3
 
   
 ## Documentation
 
-[Documentation](https://linktodocumentation)
+[Documentation](https://scikit-learn.org/stable/)
+
 
   
-## Demo
-
-Insert gif or link to demo
-
-  
-## 🚀 About Me
-I'm a full stack developer...
-
-  
-## API Reference
-
-#### Get all items
-
-```http
-  GET /api/items
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
-
-#### Get item
-
-```http
-  GET /api/items/${id}
-```
-
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-
-#### add(num1, num2)
-
-Takes two numbers and returns the sum.
-
-  
-## Acknowledgements
-
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-
-  
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-  
-## Running Tests
-
-To run tests, run the following command
-
-```bash
-  npm run test
-```
-
-  
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-  
-## Installation
-
-Install my-project with npm
-
-```bash
-  npm install my-project
-  cd my-project
-```
     
